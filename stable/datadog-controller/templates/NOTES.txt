@@ -1,3 +1,0 @@
-To verify that the datadog-controller pod has started, run:
-
-  kubectl --namespace={{ .Release.Namespace }} get pods -l "app.kubernetes.io/name={{ template "datadog-controller.name" . }},app.kubernetes.io/instance={{ .Release.Name }}"

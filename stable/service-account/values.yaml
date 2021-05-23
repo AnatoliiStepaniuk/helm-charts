@@ -1,7 +1,0 @@
-serviceAccountAnnotations: {}
-
-clusterRoleRules: []
-
-extraLabels: {}
-
-serviceAccountName:

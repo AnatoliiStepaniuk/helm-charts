@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  labels:
-    {{- include "postgres-controller.labels" . | nindent 4 }}
-  name: {{ template "postgres-controller.fullname" . }}
-data:
-  postgres-controller.yaml: |
-{{ .Values.config | toYaml | indent 4 }}
