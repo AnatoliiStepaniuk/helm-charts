@@ -33,7 +33,7 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   annotations: {}
   extraLabels: {}
 
@@ -71,7 +71,7 @@ worker:
   image: ""
   # worker.logLevel -- Log level. Can be INFO or DEBUG
   logLevel: INFO
-  replicas: 1
+  replicas: 3
   hpa:
     enabled: false
     minReplicas: 1
